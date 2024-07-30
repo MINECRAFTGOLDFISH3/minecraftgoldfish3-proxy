@@ -17,6 +17,6 @@ chemical.app.use(express.static("public", {
     extensions: ["html"]
 }));
 
-chemical.server.listen(port, () => {
+chemical.listen(port, () => {
     console.log(`Chemical example styled listening on port ${port}`);
 });
