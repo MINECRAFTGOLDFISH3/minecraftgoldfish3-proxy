@@ -1,0 +1,24 @@
+{
+  "name": "minecraftgoldfish3",
+  "version": "1.0.0",
+  "description": "minecraftgoldfish3",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MINECRAFTGOLDFISH3/minecraftgoldfish3-proxy.git"
+  },
+  "author": "MINECRAFTGOLDFISH3",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MINECRAFTGOLDFISH3/minecraftgoldfish3-proxy/issues"
+  },
+  "homepage": "https://github.com/MINECRAFTGOLDFISH3/minecraftgoldfish3-proxy",
+  "dependencies": {
+    "chemicaljs": "^1.5.0",
+    "express": "^4.19.2"
+  }
+}

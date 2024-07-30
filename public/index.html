@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">       
+    <meta name="description" content="minecraftgoldfish3.github.io"  />
+    <meta name="keywords" content="front-end web developer, unblocked, games, google sites, unblocked games mom, ublocked, code, coding, programmer, development, javascript, jquery, bootstrap, sass, less, git, gaming, internet, website, best, site, cool, free games, unblocked games, minecraftgoldfish3"  />
+    <meta name="author" content="minecraftgoldfish3" />
+    <title>minecraftgoldfish3</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <script src="/chemical.js"></script>
+    <script src="/chemical.components.js"></script>
+</head>
+<body>
+    <div class="center">
+            <!-- <div class="proxy-wrapper">
+            <input autofocus spellcheck="false" autocomplete="off" id="search-main" frame="web" placeholder="Enter a URL" is="chemical-input" />
+            <button for="search" id="enter" is="chemical-button">Enter</button>
+        </div> -->
+        <section id="controls" is="chemical-controls">
+            <button onclick="chemicalAction('back', 'web')">←</button>
+            <button onclick="chemicalAction('forward', 'web')">→</button>
+            <button onclick="chemicalAction('reload', 'web')">⟳</button>
+            <!-- <button onclick="chemicalAction('close', 'web')">🗙</button> -->
+	    <button onclick="home();">⌂</button>
+            <input spellcheck="false" autocomplete="off" id="search" class="proxy" frame="web" placeholder="Enter a URL" is="chemical-input" value="" />
+	    <button for="search" id="enter" is="chemical-button" class="search-btn"><i class="bi bi-search"></i></button>
+            <div class="line"></div>
+        </section>
+        <iframe id="web" controls="controls" is="chemical-iframe"></iframe>
+    </div>
+    <script src="js/start.js"></script>
+    <script src="js/adblocker.js"></script>
+    <script src="/js/main.js"></script>
+    <script>
+	async function encodeURL(url) {
+	    if (window.chemicalEncoded) {
+	        var newURL = await window.chemicalEncode(url);
+	        console.log(newURL);
+	    }
+	}
+    </script>
+</body>
+</html>

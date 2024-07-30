@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>minecraftgoldfish3</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="center">
+        <h1>Welcome to this proxy!</h1>
+        <p>This simple proxy is built using chemical.js and unblocks any site. This proxy also has links to lots of games, apps, cheats, hacks, tools, and more. Click the button below to get started.</p>
+        <button class="big-btn" onclick="window.location.href = 'home.html';">Get Started</button>
+    </div>
+    <script src="/js/main.js"></script>
+    <script>
+	function setCookie(name, value, days) {
+	    var expires = "";
+	    if (days) {
+		var date = new Date();
+		date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+		expires = "; expires=" + date.toUTCString();
+	    }
+		document.cookie = name + "=" + (value || "") + expires + "; path=/";
+	}
+	function getCookie(name) {
+    	    var nameEQ = name + "=";
+    	    var ca = document.cookie.split(";");
+    	    for (var i = 0; i < ca.length; i++) {
+        	var c = ca[i];
+        	while (c.charAt(0) == " ") c = c.substring(1, c.length);
+        	if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    	    }
+    	    return null;
+	}
+	var welcomed = getCookie('Welcome');
+	if (welcomed == null) {
+	    setCookie('Welcome', 'true', 30);
+	} else {
+	    window.location.href = 'home.html';
+	}
+    </script>
+</body>
+</html>
