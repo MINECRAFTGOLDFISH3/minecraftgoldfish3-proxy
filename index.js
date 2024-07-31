@@ -11,5 +11,5 @@ chemical.app.use(express.static("public", {
 }));
 
 chemical.listen(port, () => {
-    console.log(`Chemical example styled listening on port ${port}`);
+    console.log(`Proxy listening on port ${port}`);
 });
