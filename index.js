@@ -1,14 +1,7 @@
 import { ChemicalServer } from "chemicaljs";
 import express from "express";
 
-const chemical = new ChemicalServer({
-    default: "rammerhead",
-    uv: true,
-    scramjet: false,
-    rammerhead: true,
-    hostname_blacklist: [ /google\.com/, /reddit\.com/ ],
-    hostname_whitelist: [ /example\.com/ ]
-});
+const chemical = new ChemicalServer();
 
 const port = process.env.PORT || 8080;
 
