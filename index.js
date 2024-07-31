@@ -10,7 +10,7 @@ chemical.app.use(express.static("public", {
     extensions: ["html"]
 }));
 
-chemical.error((req, res) => {
+chemical.app.error((req, res) => {
     res.status(404);
     res.send("404 Error");
 });
